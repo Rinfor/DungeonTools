@@ -1,0 +1,184 @@
+﻿@model DungeonMaker.Models.Monster
+
+<div>
+  <table class="table table-borderless">
+    <tr>
+      <th>
+        @Html.DisplayNameFor(model => model.ArmorClass)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.HitPoints)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.Speed)
+      </th>
+    </tr>
+    <tr>
+      <td>
+        @Html.DisplayFor(model => model.ArmorClass)
+      </td>
+      <td>
+        @Html.DisplayFor(model => model.HitPoints)
+      </td>
+      <td>
+        @Html.DisplayFor(model => model.Speed)
+      </td>
+    </tr>
+  </table>
+  <table class="table">
+    <tr>
+      <th>
+        @Html.DisplayNameFor(model => model.MonsterAbilities.Strength)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.MonsterAbilities.Dexterity)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.MonsterAbilities.Constitution)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.MonsterAbilities.Intelligence)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.MonsterAbilities.Wisdom)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.MonsterAbilities.Charisma)
+      </th>
+    </tr>
+    <tr>
+      <td>
+        @Html.DisplayFor(model => model.MonsterAbilities.Strength)
+      </td>
+      <td>
+        @Html.DisplayFor(model => model.MonsterAbilities.Dexterity)
+      </td>
+      <td>
+        @Html.DisplayFor(model => model.MonsterAbilities.Constitution)
+      </td>
+      <td>
+        @Html.DisplayFor(model => model.MonsterAbilities.Intelligence)
+      </td>
+      <td>
+        @Html.DisplayFor(model => model.MonsterAbilities.Wisdom)
+      </td>
+      <td>
+        @Html.DisplayFor(model => model.MonsterAbilities.Charisma)
+      </td>
+    </tr>
+  </table>
+  <dl class="dl-horizontal">
+    @if (!string.IsNullOrEmpty(Model.SavingThrows))
+    {
+      <dt>
+        @Html.DisplayNameFor(model => model.SavingThrows)
+      </dt>
+
+      <dd>
+        @Html.DisplayFor(model => model.SavingThrows)
+      </dd>
+    }
+    @if (!string.IsNullOrEmpty(Model.SKills))
+    {
+      <dt>
+        @Html.DisplayNameFor(model => model.SKills)
+      </dt>
+
+      <dd>
+        @Html.DisplayFor(model => model.SKills)
+      </dd>
+    }
+    @if (!string.IsNullOrEmpty(Model.DamageVulnerabilities))
+    {
+      <dt>
+        @Html.DisplayNameFor(model => model.DamageVulnerabilities)
+      </dt>
+
+      <dd>
+        @Html.DisplayFor(model => model.DamageVulnerabilities)
+      </dd>
+    }
+    @if (!string.IsNullOrEmpty(Model.DamageResistances))
+    {
+      <dt>
+        @Html.DisplayNameFor(model => model.DamageResistances)
+      </dt>
+
+      <dd>
+        @Html.DisplayFor(model => model.DamageResistances)
+      </dd>
+    }
+    @if (!string.IsNullOrEmpty(Model.DamageImmunities))
+    {
+      <dt>
+        @Html.DisplayNameFor(model => model.DamageImmunities)
+      </dt>
+
+      <dd>
+        @Html.DisplayFor(model => model.DamageImmunities)
+      </dd>
+    }
+    @if (!string.IsNullOrEmpty(Model.ConditionImmunities))
+    {
+      <dt>
+        @Html.DisplayNameFor(model => model.ConditionImmunities)
+      </dt>
+
+      <dd>
+        @Html.DisplayFor(model => model.ConditionImmunities)
+      </dd>
+    }
+    <dt>
+      @Html.DisplayNameFor(model => model.Senses)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.Senses)
+    </dd>
+
+    <dt>
+      @Html.DisplayNameFor(model => model.Languages)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.Languages)
+    </dd>
+
+    <dt>
+      @Html.DisplayNameFor(model => model.Challenge)
+    </dt>
+
+    <dd>
+      @Html.DisplayFor(model => model.Challenge)
+    </dd>
+    @if (!string.IsNullOrEmpty(Model.Traits))
+    {
+      <dt>
+        @Html.DisplayNameFor(model => model.Traits)
+      </dt>
+
+      <dd>
+        @foreach (string trait in Model.Traits.Split(';'))
+        {
+          @DungeonMaker.Utils.Utils.PrettyItalicFormat(trait)
+          <br>
+        }
+      </dd>
+    }
+    @if (!string.IsNullOrEmpty(Model.Actions))
+    {
+      <dt>
+        @Html.DisplayNameFor(model => model.Actions)
+      </dt>
+
+      <dd>
+        @foreach (string action in Model.Actions.Split(';'))
+        {
+          @DungeonMaker.Utils.Utils.PrettyItalicFormat(action)
+          <br>
+        }
+      </dd>
+    }
+  </dl>
+</div>
+

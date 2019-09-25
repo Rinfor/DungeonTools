@@ -1,0 +1,43 @@
+﻿
+@{
+  ViewBag.Title = "Dungeon traits selection";
+}
+
+
+<h2 class="text-center">Dungeon traits</h2>
+
+<div class="d-sm-flex justify-content-sm-center">
+  <div class="float-left mr-3">
+    <div class="d-sm-flex">
+      @using (Html.BeginForm("Create", "Dungeon"))
+      {
+        <div>
+          <p class="col-form-label font-weight-bold">Dungeon Size</p>
+          @Html.DropDownList("dungeonSize", (SelectList)ViewBag.sizes, new { @class = "form-control" })
+        </div>
+
+        <div>
+          <p class="col-form-label font-weight-bold">Corridor Long</p>
+          @Html.DropDownList("corridorLong", (SelectList)ViewBag.sizes, new { @class = "form-control" })
+        </div>
+
+        <div>
+          <p class="col-form-label font-weight-bold">Room Size</p>
+          @Html.DropDownList("roomSize", (SelectList)ViewBag.sizes, new { @class = "form-control" })
+        </div>
+
+        <div>
+          <p class="col-form-label font-weight-bold">Dungeon density</p>
+          @Html.DropDownList("roomDensity", (SelectList)ViewBag.density, new { @class = "form-control" })
+        </div>
+        <br />
+        <div class="float-right">
+          <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+      }
+    </div>
+  </div>
+  <div class="float-left">
+    <img src="@Url.Content("~/Content/Images/dungeonSketch.jpg")" width=310 height=365 class="img-fluid">
+  </div>
+</div>

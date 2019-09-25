@@ -1,0 +1,68 @@
+{
+  "climates": [
+    {
+      "chance": 60,
+      "value": "Warm. Perfect temperature"
+    },
+    {
+      "chance": 10,
+      "value": "Hot. More water and more frequent breaks are needed. Heavy armor wearers have penalty in checks"
+    },
+    {
+      "chance": 20,
+      "value": "Cold. Warm clothes are needed"
+    },
+    {
+      "chance": 4,
+      "value": "Burn. Magic protection is needed to bear this clime"
+    },
+    {
+      "chance": 4,
+      "value": "Freeze. Magic protection is needed to bear this clime"
+    },
+    {
+      "chance": 2,
+      "value": "Void. Anyone who can not resists void will die"
+    }
+  ],
+  "Lightning": [
+    {
+      "chance": 30,
+      "value": "Burning torches on the wall"
+    },
+    {
+      "chance": 30,
+      "value": "Small stone cauldrons of burning oil"
+    },
+    {
+      "chance": 10,
+      "value": "Rooms and corridors are magically lit"
+    },
+    {
+      "chance": 10,
+      "value": "Luminescent mushrooms"
+    },
+    {
+      "chance": 20,
+      "value": "Darkness"
+    }
+  ],
+  "Walls": [
+    {
+      "chance": 50,
+      "value": "Masonry"
+    },
+    {
+      "chance": 30,
+      "value": "Natural stone"
+    },
+    {
+      "chance": 10,
+      "value": "Digged earth"
+    },
+    {
+      "chance": 10,
+      "value": "Unbreakable crystal"
+    }
+  ]
+}

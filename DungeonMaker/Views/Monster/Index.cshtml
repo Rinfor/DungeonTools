@@ -1,0 +1,29 @@
+﻿@model IEnumerable<DungeonMaker.Models.Monster>
+
+@{
+    ViewBag.Title = "Monster list";
+}
+
+<h2>Monster List</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Challenge)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+      <td>
+        @Html.ActionLink(item.Name, "Details", new { id = item.MonsterID })
+      </td>
+      <td>
+        @Html.DisplayFor(modelItem => item.Challenge)
+      </td>
+    </tr>
+}
+</table>

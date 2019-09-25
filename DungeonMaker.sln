@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonMaker", "DungeonMaker\DungeonMaker.csproj", "{09AE9A29-4F98-4E3D-9996-92324D5355A0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{056CCA42-5A12-448D-A160-A61E6EA9553C} = {056CCA42-5A12-448D-A160-A61E6EA9553C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DungeonMapCreator", "DungeonMapCreator\DungeonMapCreator.csproj", "{056CCA42-5A12-448D-A160-A61E6EA9553C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09AE9A29-4F98-4E3D-9996-92324D5355A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09AE9A29-4F98-4E3D-9996-92324D5355A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09AE9A29-4F98-4E3D-9996-92324D5355A0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{09AE9A29-4F98-4E3D-9996-92324D5355A0}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{056CCA42-5A12-448D-A160-A61E6EA9553C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{056CCA42-5A12-448D-A160-A61E6EA9553C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{056CCA42-5A12-448D-A160-A61E6EA9553C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{056CCA42-5A12-448D-A160-A61E6EA9553C}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40E0DE14-F28D-46B0-A782-D6F42723FFA7}
+	EndGlobalSection
+EndGlobal

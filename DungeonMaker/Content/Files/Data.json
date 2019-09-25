@@ -1,0 +1,33 @@
+{
+  "dungeonSize": {
+    "shortWidth": 50,
+    "shortHeight": 30,
+    "mediumWidth": 100,
+    "mediumHeight": 60,
+    "largeWidth": 150,
+    "largeHeight": 90
+  },
+  "corridorSize": {
+    "shortMin": 3,
+    "shortMax": 5,
+    "mediumMin": 4,
+    "mediumMax": 8,
+    "largeMin": 10,
+    "largeMax": 20
+  },
+  "roomSize": {
+    "minRoomWidth": 3,
+    "minRoomHeight": 3,
+    "shortWidth": 8,
+    "shortHeight": 8,
+    "mediumWidth": 12,
+    "mediumHeight": 12,
+    "largeWidth": 20,
+    "largeHeight": 20
+  },
+  "chanceOfRoom": {
+    "low": 30,
+    "normal": 70,
+    "high": 90
+  }
+}
